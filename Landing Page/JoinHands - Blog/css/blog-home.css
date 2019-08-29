@@ -1,0 +1,92 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    background-image: url("../about.jpg");
+    background-size: cover;
+}
+
+#container:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: rgba(25, 25, 25, 0.5);
+}
+
+#container.__signingin #form-slider,
+#container.__registration #form-info {
+    left: 50%;
+}
+
+#container.__registration #form-slider,
+#container.__signingin #form-info {
+    left: 0;
+}
+
+
+/*---------------------------
+Drop- Down Navigation
+----------------------------*/
+
+.dropbtn {
+    background-color: #2F7A4D;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 8px 25px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: left;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2e9e5b;
+    min-width: 12px;
+    min-height: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2e9e5b;
+}

@@ -1,0 +1,96 @@
+<nav class="navbar navbar-default navbar-sticky bootsnav">
+<div class="container">
+<div class="row"> 
+<div class="attr-nav">
+<a class="sponsor-button" href="myaccount.php">My Account</a>
+<a class="donation" href="logout.php">Logout</a>
+</div>           
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+<i class="fa fa-bars"></i>
+</button>
+<a class="navbar-brand logo" href="index.php"><img src="images/JoinHands.jpg" class="img-responsive" /></a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-menu">
+<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+<li><a href="index.php">Request for Help</a></li>
+<li><a href="education.php">Learn Skills</a></li>
+<li><a href="EventPage/event.php">Events</a></li>
+<li><a href="faq.php">FAQ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+
+
+<?php
+
+/* Displays user information and some useful messages */
+require 'DBConnect.php';
+session_start();
+
+// Check if user is logged in using the session variable
+if ( $_SESSION['logged_in'] != 1 ) {
+    $_SESSION['message'] = "You must log in before viewing your profile page!";
+    header("location: error.php");
+}
+else {
+    // Makes it easier to read
+    $first_name = $_SESSION['first_name'];
+    $country_name = $_SESSION['country_name'];
+    $email = $_SESSION['email'];
+    $active = $_SESSION['active'];
+}
+?>
+
+
+
+
+CREATE TABLE `educationrequest`` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(50) NOT NULL,
+  `LastName` varchar(50) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Phone` varchar(15) NOT NULL,
+  `Message` varchar(300) NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+$avatar = $_POST['avatar'];
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$country_name = $_POST['txtCountry'];
+$email= $_POST['email'];
+$phone = $_POST['phone'];
+$password = $mysqli->escape_string(password_hash($_POST['password'], PASSWORD_BCRYPT));
+$hash = $mysqli->escape_string( md5( rand(0,1000) ) );
+
+
+
+$query = 'INSERT INTO `donor`(`image`,`first_name`,`last_name`,`country_name`, `email`,`phone`, `password`, `hash`) VALUES ("'.$avatar.'", "'.$fname.'", "'.$lame.'", 
+"'.$country_name.'","'.$email.'","'.$phone.'","'.$password.'", "'.$hash.'")';
+
+
+
+
+
+
+
+
+
+CREATE TABLE `educationrequest` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `avatar` image NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `country_name` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(15) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `hash` varchar(32) NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '0',
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

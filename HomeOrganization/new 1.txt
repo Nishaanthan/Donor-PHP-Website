@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-sticky bootsnav">
+<div class="container">
+<div class="row"> 
+<div class="attr-nav">
+<a class="sponsor-button" href="myaccount.php">My Account</a>
+<a class="donation" href="logout.php">Logout</a>
+</div>           
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+<i class="fa fa-bars"></i>
+</button>
+<a class="navbar-brand logo" href="index.php"><img src="images/JoinHands.jpg" class="img-responsive" /></a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-menu">
+<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+<li><a href="index.php">Project</a></li>
+<li><a href="education.php">Education</a></li>
+<li><a href="#">Volunteer</a></li>
+<li><a href="EventPage/event.php">Events</a></li>
+<li><a href="faq.php">FAQ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
