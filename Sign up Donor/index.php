@@ -9,6 +9,7 @@ session_start();
 <head>
     <title>Sign-Up/Login Form</title>
     <?php include 'css/css.html'; ?>
+    <?php include '../chatbot_header.php'; ?>
     <style type="text/css">
         .powered {
             display: none !important;
@@ -53,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <body>
-
+    <?php include '../chatbot_body.php'; ?>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">

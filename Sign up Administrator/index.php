@@ -23,7 +23,7 @@ session_start();
             s.parentNode.insertBefore(be, s);
         })();
     </script>
-
+<?php include '../chatbot_header.php'; ?>
 </head>
 
 <?php
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <body>
-
+<?php include '../chatbot_body.php'; ?>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">

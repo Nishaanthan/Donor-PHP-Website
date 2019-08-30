@@ -52,10 +52,10 @@
             s.parentNode.insertBefore(be, s);
         })();
     </script>
-	
+<?php include '../chatbot_header.php'; ?>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<?php include '../chatbot_body.php'; ?>
 
 <div id="preloader">
   <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""> </div>
