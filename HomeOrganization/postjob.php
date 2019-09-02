@@ -44,7 +44,7 @@
 </div>
 <div class="collapse navbar-collapse" id="navbar-menu">
 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-<li><a href="HomePage.html">My Projects</a></li>
+<li><a href="/">My Jobs</a></li>
 <li><a href="Education Page.html">Education </a></li>
 <li><a href="#">Volunteering</a></li>
 <li><a href="EventPage/EventPage.html">My Events</a></li>
@@ -59,53 +59,31 @@
 <div class="overlay">
 <div class="container">
 <div class="row"> 
-<div class="col-sm-6"><h1>Create New Project</h1>
+<div class="col-sm-6"><h1>Create New Job</h1>
 </div>
 <div class="col-sm-6">
-<h6 class="breadcrumb"><a href="HomePage.html">MyProject</a></div>
+<h6 class="breadcrumb"><a href="/">MyProject</a></div>
 </div>
 </div>
 </div>
 </section>
 
 
-<form action="index.html" method="post">
+<form action="createjob.php" method="post" enctype="multipart/form-data">
 	  <br>
 	  
    		  <br>
-          <label for="name"> <strong> Name of the Project* </strong> </label>
+          <label for="name"> <strong> Name of the Job* </strong> </label>
           <input type="text" id = "name" name="user_name" required="required" data-error="Organization Name is Required">
           <br>
-		  <label for="images"> <strong> Add Images for the Project* </strong> </b></label>
-            <label for="image"> Image 1 </label>
-          <input type="file" id = "avatar" name = "image1"> 
-		  <label for="image"> Image 2 </label>
-          <input type="file" id = "avatar" name = "image2"> 
-		  <label for="image"> Image 3 </label>
-          <input type="file" id = "avatar" name = "image3"> 
-		  <label for="image"> Image 4 </label>
-          <input type="file" id = "avatar" name = "image4"> 
-		  <label for="image"> Image 5 </label>
-          <input type="file" id = "avatar" name = "image5"> 
+		  <label for="images"> <strong> Add Images for the Job* </strong> </b></label>
+          <input type="file" id = "avatar" name = "image" /> 
+
 		      		  <br>
          <label for="description"> <strong> Add Project Description</strong> </label>
            <textarea id="description" name="usr-description" required="required" data-error="Add purpose of the Project"></textarea>
 		   <br>
-		   <label for="requirements"> <strong> Add Project Requirements* </strong> </b></label>
-		   <input type="text" id = "requirement1" name="requirement1" required="required" data-error="Please enter the necessary Requirements">
-		   <input type="text" id = "requirement2" name="requirement2" required="required" data-error="Please enter the necessary Requirements">
-		   <input type="text" id = "requirement3" name="requirement3" >
-		   <input type="text" id = "requirement4" name="requirement4" >
-		   <input type="text" id = "requirement5" name="requirement5" >
-		   <input type="text" id = "requirement6" name="requirement6" >
-		   <input type="text" id = "requirement7" name="requirement7" >
-		   <input type="text" id = "requirement8" name="requirement8" >
-		   <input type="text" id = "requirement9" name="requirement9" >
-		   <input type="text" id = "requirement10" name="requirement10" >
 		   
-		 <label for="amount"> <strong> Estimated Amount for the Project* </strong> </b></label>
-	    <input type="text" id = "amount" name="amount" required="required" data-error="Please enter the Estimated Amount" placeholder = "LKR">
-		
 		<label for="Category"><strong> Select Category</strong> </label>
         <select id="Category" name="category" required="required" data-error="Please enter the Estimated Amount">
 		

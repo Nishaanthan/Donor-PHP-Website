@@ -55,7 +55,11 @@ else {
 </button>
 <a class="navbar-brand logo" href="#"><img src="images/JoinHands.jpg" class="img-responsive" /></a>
 </div>
-
+<div class="collapse navbar-collapse" id="navbar-menu">
+<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+<li><a href="postjob.php">Post a Job</a></li>
+</ul>
+</div>
 </div>
 </div>
 </nav>

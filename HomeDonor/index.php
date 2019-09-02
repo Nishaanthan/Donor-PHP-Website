@@ -94,6 +94,7 @@ if ($_SESSION['logged_in'] != 1) {
 					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 						<li><a href="index.php">Project</a></li>
 						<li><a href="education.php">Education</a></li>
+						<li><a href="jobs.php">Jobs</a></li>
 						<li><a href="#">Volunteer</a></li>
 						<li><a href="EventPage/event.php">Events</a></li>
 						<li><a href="faq.php">FAQ</a></li>

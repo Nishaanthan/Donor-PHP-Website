@@ -35,6 +35,9 @@ else { // Email doesn't already exist in a database, proceed...
     $sql = "INSERT INTO 'donor' (image,first_name, last_name, country_name, email, phone password, hash) "
             . "VALUES ('$image','$first_name', '$last_name''$country_name','$email','$phone''$password', '$hash')";
 
+    if($mysqli->query($sql)){
+        
+    }
     else {
         $_SESSION['message'] = 'Registration failed!';
         header("location: error.php");
