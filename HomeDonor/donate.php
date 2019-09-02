@@ -1,6 +1,7 @@
 <?php
 /* Displays user information and some useful messages */
 session_start();
+require 'config.php';
 
 // Check if user is logged in using the session variable
 if ($_SESSION['logged_in'] != 1) {
@@ -99,11 +100,14 @@ if ($_SESSION['logged_in'] != 1) {
               <span>$</span>
               <input data-impact="That’s great. Thank you!">
             </li>
-            <li><a href="#">
+            <li style="padding-top: 20px;padding-left: 20px;">
+            <!-- <a href="#">
                 <button class="btn-green" data-toggle="modal" data-target="#myModal">
                   DONATE
                 </button>
-              </a></li>
+            </a> -->
+              <?php require 'paypalButton.php'; ?>
+              </li>
             <li style="display: none;"><a href="#">
                 LEARN MORE<i class="fa fa-chevron-right margin-left"></i>
               </a></li>
