@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 30, 2019 at 11:01 PM
+-- Generation Time: Sep 02, 2019 at 08:50 PM
 -- Server version: 5.7.27-0ubuntu0.18.04.1
 -- PHP Version: 7.2.19-0ubuntu0.18.04.2
 
@@ -171,6 +171,28 @@ INSERT INTO `educationrequest` (`id`, `FirstName`, `LastName`, `Email`, `Phone`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `jobs`
+--
+
+CREATE TABLE `jobs` (
+  `id` int(11) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `image` varchar(100) DEFAULT NULL,
+  `description` varchar(500) NOT NULL,
+  `category` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `jobs`
+--
+
+INSERT INTO `jobs` (`id`, `user_name`, `image`, `description`, `category`) VALUES
+(25, 'Beach clean', 'beach clean.jpg', 'Beach clean in Jaffna', 'disaster'),
+(26, 'Blood Donation', '66106525.jpg', 'Blood donation camp at jaffna', 'medical');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `organization`
 --
 
@@ -301,6 +323,12 @@ ALTER TABLE `educationrequest`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `jobs`
+--
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `organization`
 --
 ALTER TABLE `organization`
@@ -348,6 +376,11 @@ ALTER TABLE `educationproject`
 --
 ALTER TABLE `educationrequest`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `jobs`
+--
+ALTER TABLE `jobs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `organization`
 --
