@@ -1,0 +1,35 @@
+! version = 2.0
+
++ hello
+- Hello, what is your name?
+
++ hi
+- Hi, what is your name?
+
++ my name is *
+- Nice to meet you <star> \n
+^ Are you a donor or Requester ?
+
++ thank you
+- You are welcome
+- Welcome
+- No problem
+- No worries
+
++ * donor *
+- Register yourself as a donor so that we can help others in the comunity \n
+^ Here is your link to Register : \n
+^ <a href="http://localhost/JoinHands/Sign%20up%20Donor/index.php" target="blank"> Link <a>
+
++ * request *
+- Register yourself as a Requestor so that we can help others in the comunity \n
+^ Here is your link to Register : \n
+^ <a href="http://localhost/JoinHands/Sign%20up%20Requestor/index.php" target="blank"> Link <a>
+
++ *
+- Sorry did not get what you said
+- I am afraid that i can not understand you
+- I did not get it
+- Sorry can you please elaborate that for me
+
+

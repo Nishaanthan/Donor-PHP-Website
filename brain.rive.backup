@@ -1,0 +1,59 @@
+! version = 2.0
+
++ hello
+- hello, what is your name?
+
++ hi
+- hi, what is your name?
+
++ my name is *
+- nice to meet you <star>
+- nice meeting you <star>
+
+-Are you A DONOR or REQUESTOR
++DONOR
++REQUESTOR
+
+if +Donor
+
+ - register yourself as a donor so that we can help others in the comunity
+ (in options)
+ - register or other services
+ 
+ if +register
+   -(link to register as Donor Page)
+   
+   else 
+   -other sevices
+   (in options)
+    - How to Donate?
+	- how to apply for job?
+	- Next Event time?
+	- Education Services
+	
+    + Here is your Linked page (link it to those pages)
+	
+if +REQUESTOR
+
+ - register yourself as a requestor so that we can help you with our comunity
+ (in options)
+ -register or other services
+ 
+  if +register
+   -(link to register as REQUESTOR Page)
+  
+  else 
+  -other sevices
+   (in options)
+    - How to request for help?
+	- how to apply for cource?
+	- Education Services
+	
+    + Here is your Linked page (link it to those pages)
+
++ *
+- Sorry did not get what you said
+- I am afraid that i can not understand you
+- I did not get it
+- Sorry can you please elaborate that for me
+

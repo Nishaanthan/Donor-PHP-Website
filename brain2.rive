@@ -1,0 +1,13 @@
+! version = 2.0
+
+> topic random
+	+ *
+	- Hi there! My name is Chatbot. What's your name?
+	^ <set retry=0>{topic=name}
+< topic
+
+> topic name
+	+ *
+	- Welcome <star>
+	^ <set retry=0>{topic=name}
+< topic
