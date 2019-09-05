@@ -34,7 +34,7 @@
 <div class="row"> 
 <div class="attr-nav">
 <a class="sponsor-button" href="EditProfile.html">My Account</a>
-<a class="donation" href="#">Logout</a>
+<a class="donation" href="logout.php">Logout</a>
 </div>           
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -46,9 +46,9 @@
 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 <li><a href="/">My Jobs</a></li>
 <li><a href="Education Page.html">Education </a></li>
-<li><a href="#">Volunteering</a></li>
+<li><a href="myaccount.php">Volunteering</a></li>
 <li><a href="EventPage/EventPage.html">My Events</a></li>
-<li><a href="#">FAQ</a></li>
+<li><a href="faq.php">FAQ</a></li>
 </ul>
 </div>
 </div>
@@ -98,7 +98,7 @@
          
 		</select>
 		
-		 <button type="submit">Create Project</button>
+		 <button type="submit">Create Job</button>
 </form>
 
 
